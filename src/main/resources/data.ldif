@@ -1,0 +1,33 @@
+
+dn: dc=mycompany,dc=com
+objectClass: top
+objectClass: domain
+dc: mycompany
+
+
+dn: o=mycompany,dc=mycompany,dc=com
+objectClass: top
+objectClass: organization
+o: mycompany
+
+
+dn: ou=users,dc=mycompany,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+
+dn: cn=pepe.lopez,ou=users,dc=mycompany,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: pepe.lopez
+sn: Lopez
+userPassword: pass1
+
+
+dn: cn=juan.sanz,ou=users,dc=mycompany,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: juan.sanz
+sn: Sanz
+userPassword: pass2

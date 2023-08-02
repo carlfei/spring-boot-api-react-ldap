@@ -1,0 +1,47 @@
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<div class="container">
+  <form class="form-inline" (submit)="newUser()">
+    
+   
+    <div class="form-group">
+      <label class="sr-only" for="id">Id:</label>
+      <input type="text" class="form-control" id="id" placeholder="Enter id"  name="id" [(ngModel)]="id">
+    </div>
+
+    <div class="form-group">
+      <label class="sr-only" for="user">Username:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter name"  name="email" [(ngModel)]="username">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" [(ngModel)]="password">
+    </div>
+
+
+
+    <div class="form-group">
+      <label class="sr-only" for="user">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name"  name="name" [(ngModel)]="name">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="pwd">Age:</label>
+      <input type="text" class="form-control" id="age" placeholder="Enter age" name="age" [(ngModel)]="age">
+    </div>
+
+    <!--
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember" [(ngModel)]="rememberMe"> Remember me</label>
+    </div>
+  -->
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+
